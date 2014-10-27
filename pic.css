@@ -1,0 +1,131 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label,fieldset{
+	/* A simple page reset */
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	/* Styling the body */
+	color: white;
+	font-size: 13px;
+	background: #222222;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.pic{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	cursor: pointer;
+	position:absolute;
+	border:5px solid #EEE;
+	border-bottom:18px solid #EEE;
+	
+	/* CSS3 Box Shadow */
+	-moz-box-shadow:2px 2px 3px #333333;
+	-webkit-box-shadow:2px 2px 3px #333333;
+	box-shadow:2px 2px 3px #333333;
+}
+.pic:hover{
+	-moz-box-shadow:2px 2px 3px #888;
+	-webkit-box-shadow:2px 2px 3px #888;
+}
+.image-box, .image-dimmer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99999;
+	display: none;
+	top: 0;
+	left: 0;
+	zoom: 1;
+}
+.image-dimmer {
+	background: #222;
+	opacity: 0.7;
+}
+#gallery, .image-autoplay {
+	width: 1000px;
+	height: 650px;
+	left: 100px;
+	position: relative;
+	top: 40px;
+}
+.image-autoplay {
+	display: none;
+	position: absolute;
+	z-index: 99999;
+}
+.image-autoplay img {
+	border: 10px solid #EEE;
+	-moz-box-shadow: 3px 3px 5px #333;
+	-moz-border-radius: 2px;
+	position: absolute;
+}
+#image2show {
+	border: 15px solid #EEE;
+	position: relative;
+	-moz-box-shadow: 4px 4px 6px #333;
+	-moz-border-radius: 5px;
+	overflow: hidden;
+}
+.image-box div.image-action {
+	height: 30px;
+	background: #aaa;
+	opacity: 0.7;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.image-box div.image-action a {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin: 3px 5px 3px 0;
+	text-indent: -9999px;
+	position: absolute;
+	outline: none;
+}
+.image-box div.image-action a.ico-del {
+	right: 5px;
+	background: transparent url(./images/icos.png) no-repeat 0 0;
+}
+.image-box div.image-action a.ico-del:hover {
+	background: transparent url(./images/icos.png) no-repeat 0 -24px;
+}
+.image-box div.image-action a.ico-pre {
+	right: 65px;
+	background: transparent url(./images/icos.png) no-repeat 0 -48px;
+}
+.image-box div.image-action a.ico-pre:hover {
+	background: transparent url(./images/icos.png) no-repeat 0 -72px;
+}
+.image-box div.image-action a.ico-next {
+	right: 35px;
+	background: transparent url(./images/icos.png) no-repeat 0 -96px;
+}
+.image-box div.image-action a.ico-next:hover {
+	background: transparent url(./images/icos.png) no-repeat 0 -120px;
+}
+.ico-auto-play {
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	margin: 3px 5px 3px 0;
+	text-indent: -9999px;
+	position: absolute;
+	outline: none;
+	left: 10px;
+	top: 10px;
+	background: transparent url(./images/bigicon.png) no-repeat 0 0;
+	opacity: 0.7;
+}
+.ico-auto-play:hover {
+	background: transparent url(./images/bigicon.png) no-repeat 0 -48px;
+}
+.clear{
+	/* The clearfix hack */
+	clear:both;
+}
